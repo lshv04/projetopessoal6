@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -.2px;
+  line-height: 1.2em;
+  color: #000000;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.875rem;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: -.2px;
+  line-height: 1.2em;
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 1.2em;
+  color: #000000;
+}
+
+/* navbar */
+
+.nav1 {
+  padding: 1.875rem 2.5rem;
+}
+
+.navcont {
+  z-index: 10;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 100px;
+  opacity: 1;
+  background-color: rgba(232, 229, 228, 0.5);
+  padding: 4px;
+  width: 350px;
+  backdrop-filter: blur(16px);
+}
+
+.navitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  opacity: 1;
+  height: 2.5rem;
+  padding: 1.0rem 2.0rem;
+}
+
+.navitem a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.2em;
+}
+
+/* header */
+.header1 {
+  margin-top: 1.5rem;
+  padding: 3rem;
+  animation: slide-in-blurred-bottom .5s ease-in-out;
+}
+
+.header2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.625rem;
+  animation: slide-in-blurred-bottom .7s ease-in-out;
+}
+
+.headerp {
+  background-color: #e8e5e480;
+  border-radius: 100px;
+  padding: 8px 12px;
+}
+
+/* section */
+
+.sec {
+  margin: 0 0.1rem 2.5rem;
+  animation: slide-in-blurred-bottom .9s ease-in-out;
+}
+
+.section1 {
+  height: 30vw;
+  border-radius: 16px;
+
+  position: relative;
+  overflow: hidden
+}
+
+.section2 {
+  margin-top: 2.5rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#current {
+  background-color: var(--token-1fc33387-132e-4e93-8c56-ca86d526816b, rgb(255, 255, 255));
+}
+
+.div1,
+.div2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.div1 {
+  z-index: 2;
+}
+
+.div2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px;
+}
+
+.div2a p {
+  color: #fff;
+}
+
+i {
+  color: #000000;
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+.div1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.div2b {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 10000px;
+  background-color: #fff;
+  padding: 2px;
+}
+
+.div1:hover {
+  filter: blur(16px);
+  cursor: pointer;
+}
+
+.section1:hover .div1 img {
+  filter: blur(16px);
+  cursor: pointer;
+}
+
+.section1b:hover video {
+  filter: blur(16px);
+  cursor: pointer;
+}
+
+.section1:hover .div2 {
+  z-index: 3;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.section1:hover .div2b {
+  animation: slide-tr 0.5s forwards;
+}
+
+.section1:hover .div2bc {
+  animation: slide-tr 0.5s forwards;
+}
+
+.section1b video {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.section1c i {
+  background-color: #000;
+  color: #fff;
+}
+
+.div2bc {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 10000px;
+  padding: 2px;
+  background-color: #000;
+}
+
+
+.pmobile {
+  margin-top: 1rem;
+  font-weight: bold;
+  display: none;
+}
+
+.last {
+  margin: 0;
+  text-align: center;
+  padding: 2.5rem;
+  animation: slide-in-blurred-bottom .5s ease-in-out;
+}
+
+.last a {
+  text-decoration: none;
+  color: #7f7f7f;
+}
+
+#lasta:hover {
+  color: #D3D3D3;
+}
+
+/* footer */
+
+footer {
+  padding: 1.5rem 6.0rem !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.foot1 p {
+  font-weight: bold;
+}
+
+#fotlink {
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0px;
+  line-height: 1.2em;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+#fotlink:hover {
+  color: #7f7f7f;
+}
+
+@media (max-width: 767px) {
+  .navcont {
+    width: 300px;
+  }
+
+  .navitem {
+    padding: 1.0rem 1.5rem;
+  }
+
+  .header1 {
+    padding: 4rem 0;
+  }
+
+  .header2 {
+    display: none;
+  }
+
+  .section1 {
+    height: 60vw;
+  }
+
+  .pmobile {
+    display: block;
+  }
+
+  .sec {
+    margin: 0 0.1rem 0;
+  }
+
+  .last {
+    text-align: center;
+    padding: 1.0rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  footer {
+    padding: 6rem 6.0rem 3rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width: 810px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-7-11 13:44:50
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(50px) scaleY(1) scaleX(1);
+    transform: translateY(50px) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 10% 10%;
+    transform-origin: 10% 10%;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 10% 10%;
+    transform-origin: 10% 10%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(50px) scaleY(1) scaleX(1);
+    transform: translateY(50px) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 10% 10%;
+    transform-origin: 10% 10%;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 10% 10%;
+    transform-origin: 10% 10%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-7-11 14:24:54
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-tr
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-30px) translateX(30px);
+    transform: translateY(-30px) translateX(30px);
+  }
+}
+
+@keyframes slide-tr {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-30px) translateX(30px);
+    transform: translateY(-30px) translateX(30px);
+  }
+}
