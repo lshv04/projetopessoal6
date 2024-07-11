@@ -20,10 +20,10 @@ Esse trabalho foi especialmente desafiador devido aos múltiplos efeitos e anima
  
  
 
-![image](https://github.com/user-attachments/assets/9375bc40-58fc-4940-bb21-f217d16b3110) 
-![image](https://github.com/user-attachments/assets/c456be92-b54c-452e-a902-b10dfc526b7d)
-![image](https://github.com/user-attachments/assets/83945a1f-9094-4d85-9dfb-5513bec6c99a)
-![image](https://github.com/user-attachments/assets/1e9870b4-e461-49f6-bb91-35c02d6a4a37)
+![image](https://github.com/user-attachments/assets/9375bc40-58fc-4940-bb21-f217d16b3110)   
+![image](https://github.com/user-attachments/assets/c456be92-b54c-452e-a902-b10dfc526b7d)  
+![image](https://github.com/user-attachments/assets/83945a1f-9094-4d85-9dfb-5513bec6c99a)  
+![image](https://github.com/user-attachments/assets/1e9870b4-e461-49f6-bb91-35c02d6a4a37)  
 
 
 
